@@ -48,6 +48,15 @@ setInterval(animateFavicon, 20); // in milliseconds
 
 
 /* ----------------------------------------------------- */
+/* LOADING SCREEN */
+/* ----------------------------------------------------- */
+window.addEventListener("load", function() {
+  const loader1 = document.querySelector(".loading");
+  loader1.className += " hidden"; //class "loader hidden"
+});
+
+
+/* ----------------------------------------------------- */
 /* CURSOR */
 /* ----------------------------------------------------- */
 var cursor = document.querySelector('.cursor'),
