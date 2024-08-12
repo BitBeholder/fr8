@@ -22,6 +22,32 @@ pictures.forEach(picture => {
 });
 
 
+/*-------------------------------------------------*/
+/* ANIMATED FAVICON GIF */
+/*-------------------------------------------------*/
+var faviconFrames = [
+  '../imgs/icons/1-F.png',
+  '../imgs/icons/2-R.png',
+  '../imgs/icons/3-8.png',
+];
+
+var currentFrame = 0;
+
+function animateFavicon() {
+  var link = document.querySelector("link[rel~='icon']");
+  if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  link.href = faviconFrames[currentFrame];
+  currentFrame = (currentFrame + 1) % faviconFrames.length;
+}
+
+setInterval(animateFavicon, 20); // Change every 500ms or adjust as needed
+
+
+
 /* ----------------------------------------------------- */
 /* CURSOR */
 /* ----------------------------------------------------- */

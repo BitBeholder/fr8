@@ -233,10 +233,12 @@ p {
     border-radius: 3px;
     /*border-image: linear-gradient(to right,#FEFE0C, #6CFDFD, #1B75F4, #DC141A, #F59FF5) 1;*/
     cursor: pointer;
+    transition: all .2s;
 }
 
 .main-btn:hover {
     color: var(--main-bg-color);
+    padding: 20px 37px;
 }
 
 
@@ -298,7 +300,7 @@ nav .nav-logo img {
 nav .nav-options {
     position: fixed;
     right: 60px;
-    top: 34px;
+    top: 40px;
 }
 
 nav .nav-options li {
@@ -309,12 +311,17 @@ nav .nav-options li {
 nav .nav-options li a {
     font-size: 1em;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
+    border: solid white;
+    background: transparent;
+    color: var(--main-text-color);
+    padding: 12px 20px;
+    transition: all 0.3s ease, color 0.3s ease;
 }
 
 nav .nav-options li a:hover {
     color: var(--main-text-color);
     transform: scale(2) !important;
+    padding: 14px 22px;
 }
 
 
@@ -372,6 +379,7 @@ header .header-body .header-title h1 {
     text-align: center;
     /*text-shadow: 1.2px 1.2px 0px rgba(32, 54, 255, 0.955),
                 -1.2px -1.2px 0px rgba(255, 0, 0, 0.723);*/
+    line-height: 0.9em;
 }
 
 header {
@@ -383,6 +391,7 @@ header {
 
 header .header-action {
     text-align: center;
+    margin-top: 50px;
 }
 
 header .countdown {
@@ -407,10 +416,15 @@ header .socmed li {
     display: inline;
     margin-left: 20px;
     cursor: pointer;
+    transition: all .3s;
 }
 
 header .socmed li img {
     height: 24px;
+}
+
+header .socmed li:hover {
+    opacity: .7;
 }
 
 
@@ -593,6 +607,11 @@ header .socmed li img {
     border: 2px solid transparent;
     border-radius: 3px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.contact-button:hover {
+    padding: 24px;
 }
 
 .contact-button b {
@@ -606,6 +625,11 @@ header .socmed li img {
     border: 2px solid var(--main-text-color);
     border-radius: 3px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.contact-button-hollow:hover {
+    padding: 24px;
 }
 
 .contact-button-hollow b {
@@ -641,4 +665,5 @@ footer .footer-content .footer-contact a {
 
 footer .footer-content .footer-contact a:hover {
     color: var(--main-text-color);
+    text-decoration: underline;
 }

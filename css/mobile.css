@@ -29,7 +29,7 @@
     .title-3 {
         font-family: var(--main-title-font);
         color: var(--main-text-color);
-        font-size: 2.4em;
+        font-size: 2em;
         font-weight: 500;
         line-height: 0.97em;
     }
@@ -90,10 +90,19 @@
 
 
     /*----------------------------------------------------------*/
+    /* LIGHT FOLLOW MOUSE */
+    /*----------------------------------------------------------*/
+    .mouse-light {
+        background: radial-gradient(ellipse at center, transparent 0%, rgba(18, 18, 18, 0.99) 60%) !important;
+        pointer-events: auto;
+    }
+
+
+    /*----------------------------------------------------------*/
     /* NAV */
     /*----------------------------------------------------------*/
     nav .nav-logo {
-        top: 20px;
+        top: 30px;
         left: 30px;
     }
 
@@ -102,7 +111,8 @@
     }
 
     nav .nav-options {
-        display: none;
+        top: 30px;
+        right: 30px;
     }
 
 
@@ -114,8 +124,7 @@
     }
 
     header .header-body .header-title h1 {
-        font-size: 3.5em !important;
-        overflow-y: hidden;
+        font-size: 3.2em !important;
     }
 
     header .countdown {
