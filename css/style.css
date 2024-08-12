@@ -286,10 +286,16 @@ nav {
 }
 
 /* Nav logo */
-nav .nav-logo {
+nav #nav_logo {
     position: fixed;
     top: 40px;
     left: 60px;
+    transition: .5s ease-out;
+}
+
+nav #nav_logo.active {
+    top: 20px;
+    left: 30px;
 }
 
 nav .nav-logo img {
@@ -297,10 +303,16 @@ nav .nav-logo img {
 }
 
 /* Nav options */
-nav .nav-options {
+nav #nav_options {
     position: fixed;
     right: 60px;
     top: 40px;
+    transition: .5s ease-out;
+}
+
+nav #nav_options.active {
+    top: 25px;
+    right: 30px;
 }
 
 nav .nav-options li {

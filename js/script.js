@@ -44,8 +44,7 @@ function animateFavicon() {
   currentFrame = (currentFrame + 1) % faviconFrames.length;
 }
 
-setInterval(animateFavicon, 20); // Change every 500ms or adjust as needed
-
+setInterval(animateFavicon, 20); // in milliseconds
 
 
 /* ----------------------------------------------------- */
@@ -236,6 +235,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.refresh();
+
+  // NAVIGATION LOGO
+  var navLogo = document.querySelector('#nav_logo');
+
+  locoScroll.on('scroll', (args) => {
+      // Access the scroll position
+      var scrollY = args.scroll.y;
+
+      // Check the scroll position and add/remove the active class
+      if (scrollY > 500) {
+          navLogo.classList.add('active');
+      } else {
+          navLogo.classList.remove('active');
+      }
+  });
+
+  //NAVIGATION OPTIONS
+  var navOptions = document.querySelector('#nav_options');
+
+  locoScroll.on('scroll', (args) => {
+    // Access the scroll position
+    var scrollY = args.scroll.y;
+
+    // Check the scroll position and add/remove the active class
+    if (scrollY > 500) {
+        navOptions.classList.add('active');
+    } else {
+        navOptions.classList.remove('active');
+    }
+  });
 
   // GSAP Parallax Effect on the background image
   gsap.to(".contact", {
