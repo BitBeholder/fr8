@@ -1,0 +1,202 @@
+
+/* PHONE OPTIMIZATION */
+@media (max-width: 500px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+
+    /*----------------------------------------------------------*/
+    /* TEXT-STYLE PRESETS */
+    /*----------------------------------------------------------*/
+    /* Text Settings */
+    .title-1 {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 5em;
+        font-weight: 500;
+        line-height: 0.94em;
+    }
+
+    .title-2 {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 2.4em;
+        font-weight: 400;
+        line-height: 1.2em !important;
+    }
+
+    .title-3 {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 2.4em;
+        font-weight: 500;
+        line-height: 0.97em;
+    }
+
+    .text-1 {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+
+    .text-2 {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 0.99em;
+        font-weight: 100;
+    }
+
+    .text-2-bold {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 0.99em;
+        font-weight: 500;
+    }
+
+    .text-3 {
+        font-family: var(--main-title-font);
+        color: var(--main-text-color);
+        font-size: 0.86em;
+        font-weight: 100;
+    }
+
+    /* Buttons Settings */
+    .buttons-container {
+        margin-top: 40px;
+    }
+
+    .main-btn {
+        padding: 18px 35px;
+        line-height: normal;
+    }
+
+    .main-btn:hover {
+        color: var(--main-bg-color);
+    }
+
+
+    /*----------------------------------------------------------*/
+    /* CURSOR */
+    /*----------------------------------------------------------*/
+    .cursor {
+        display: none;
+    }
+
+    .grow {
+        display: none;
+    }
+
+
+    /*----------------------------------------------------------*/
+    /* NAV */
+    /*----------------------------------------------------------*/
+    nav .nav-logo {
+        top: 20px;
+        left: 30px;
+    }
+
+    nav .nav-logo img {
+        height: 18px;
+    }
+
+    nav .nav-options {
+        display: none;
+    }
+
+
+    /*----------------------------------------------------------*/
+    /* HEADER */
+    /*----------------------------------------------------------*/
+    header .header-body .header-title {
+        width: 100%;
+    }
+
+    header .header-body .header-title h1 {
+        font-size: 3.5em !important;
+        overflow-y: hidden;
+    }
+
+    header .countdown {
+        font-size: 1.2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .socmed {
+        display: none;
+    }
+    
+
+    /*----------------------------------------------------------*/
+    /* HEADER */
+    /*----------------------------------------------------------*/
+    .intro {
+        padding: 30% 6%;
+    }
+
+    .intro .intro-content {
+        text-align: left;
+    }
+
+    .intro .intro-content p {
+        margin-top: 20px;
+    }
+
+    /*----------------------------------------------------------*/
+    /* SERVICES */
+    /*----------------------------------------------------------*/
+    .services {
+        padding: 20% 6%;
+    }
+
+    .services .services-content {
+        display: block;
+    }
+
+    /* FAQ */
+    .services-faq {
+        margin-top: 10%;
+    }
+
+
+    /*----------------------------------------------------------*/
+    /* CONTACT */
+    /*----------------------------------------------------------*/
+    .contact {
+        padding: 25% 6%;
+    }
+
+    .contact .content-container {
+        display: block;
+    }
+
+    .contact .content-container .content-title h2 {
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact .content-container .content-action {
+        margin-top: 50px;
+        display: block;
+    }
+
+    .contact-button {
+        margin-bottom: 10px;
+    }
+
+
+    /*----------------------------------------------------------*/
+    /* FOOTER */
+    /*----------------------------------------------------------*/
+    footer .footer-content {
+        display: block;
+        text-align: center;
+    }
+
+    footer .footer-logo, .footer-text, .footer-contact {
+        margin-bottom: 20px;
+    }
+}
