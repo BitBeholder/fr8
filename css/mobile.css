@@ -103,7 +103,7 @@
     /*----------------------------------------------------------*/
     nav .nav-logo {
         top: 30px;
-        left: 30px;
+        left: 30px !important;
     }
 
     nav .nav-logo img {
@@ -112,7 +112,7 @@
 
     nav .nav-options {
         top: 30px;
-        right: 30px;
+        right: 30px !important;
     }
 
 
